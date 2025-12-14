@@ -17,12 +17,21 @@ def printBoard(board):
     print(board[6] + " | " + board[7] + " | " + board[8])   
 #take player input
 def playerInput(board):
-    inp = int((input("Enter a number 1-9:"))) 
-    if inp >= 1 and inp <=9 and board[inp-1] == '-':
-        board[inp-1] = current_player
-    else:
-        print("Your spot is already taken!")
-        print("---🥴-----🥴-----🥴-----🥴--")
+    global current_player
+    while True:
+        inp = input("Enter a number 1-9: ")
+        try:
+            inp = int(inp)
+        except ValueError:
+            print("Please enter a valid number between 1 and 9.")
+            continue
+
+        if 1 <= inp <= 9 and board[inp - 1] == "-":
+            board[inp - 1] = current_player
+            break
+        else:
+            print("Invalid move (out of range or spot taken). Try again!")
+            print("---🥴-----🥴-----🥴-----🥴--")
 
 
 #check for win conditions
@@ -88,4 +97,5 @@ while gameRunning:
     playerInput(board)
     checkWin()
     checkTie(board)
-    switchPlayer()
+    if gameRunning:
+        switchPlayer()
