@@ -2,7 +2,7 @@ tasks = []
 
 def addTask():
     task = input("Enter a task: ")
-    tasks.append(task)  # Fixed
+    tasks.append(task)  
     print(f"Task '{task}' added to the list")
 
 def listTasks():
@@ -15,10 +15,10 @@ def listTasks():
         
 
 def deleteTask():
-    listTasks()  # Fixed
+    listTasks()  
     try:
         taskToDelete = int(input("Enter the number to delete: "))
-        if 0 <= taskToDelete < len(tasks):  # Cleaner range check
+        if 0 <= taskToDelete < len(tasks):  
             removed = tasks.pop(taskToDelete)
             print(f"Task '{removed}' has been removed")
         else:
@@ -54,4 +54,5 @@ if __name__ == "__main__":
             print("invalid input. Please try again")
             
     print("Goodbye 👋👋")
+
 
