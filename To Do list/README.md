@@ -10,11 +10,11 @@ A simple command-line To-Do List app built in Python that lets users add, view, 
 
 ## How it works
 
-- The program stores all tasks in a Python list called `tasks`.
+- The program stores all tasks in a Python list called tasks.
 - When launched, it displays a menu of options (add, delete, list, quit).
-- Option 1 calls `addTask()` to get user input and append it to the list.
-- Option 2 calls `deleteTask()` to remove a specific task (after showing all tasks).
-- Option 3 calls `listTasks()` to print existing tasks.
+- Option 1 calls addTask() to get user input and append it to the list.
+- Option 2 calls deleteTask() to remove a specific task (after showing all tasks).
+- Option 3 calls listTasks() to print existing tasks.
 - Option 4 ends the program loop and prints a goodbye message.
 - Input validation ensures errors are caught, such as entering text when a number is expected.
 
@@ -27,3 +27,4 @@ A simple command-line To-Do List app built in Python that lets users add, view, 
 
 - Add timestamps.
 - Add a status for tasks, wether its completed or not
+
