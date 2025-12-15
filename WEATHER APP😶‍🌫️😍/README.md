@@ -8,10 +8,8 @@
 
 ## How it works
 - Uses `requests.get()` to call OpenWeatherMap API
-- `&units=metric` for Celsius temperatures
 - Checks `cod` status (200=success, 404=not found)
 - Extracts `weather[0]["main"]` & `main["temp"]` from JSON
-- Rounds temperature for clean display
 
 ## What I learned 
 - Learning how to work with API's
@@ -20,4 +18,5 @@
 ## Future Improvements
 -  Add wind speed, humidity
 -  weather graph ( a simple one)
+
 
