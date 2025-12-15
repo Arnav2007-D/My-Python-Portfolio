@@ -1,3 +1,6 @@
+print("WELCOME TO ARNAV'S TICTACTOE GAME")
+print("-------😄--------😄---------😄---")
+print("\n")
 board = [ "-", "-", "-",
           "-", "-", "-",
           "-", "-", "-" ]
@@ -5,7 +8,6 @@ current_player = "X"
 winner = None
 gameRunning = True
 
-#printing the game board
 def printBoard(board):
     print(board[0] + " | " + board[1] + " | " + board[2])
     print("--+---+--")
@@ -14,14 +16,24 @@ def printBoard(board):
     print(board[6] + " | " + board[7] + " | " + board[8])   
 #take player input
 def playerInput(board):
-    inp = int((input("Enter a number 1-9:"))) 
-    if inp >= 1 and inp <=9 and board[inp-1] == '-':
-        board[inp-1] = current_player
-    else:
-        print("Your spot is already taken!")
+    global current_player
+    while True:
+        inp = input("Enter a number 1-9: ")
+        try:
+            inp = int(inp)
+        except ValueError:
+            print("Please enter a valid number between 1 and 9.")
+            continue
+
+        if 1 <= inp <= 9 and board[inp - 1] == "-":
+            board[inp - 1] = current_player
+            break
+        else:
+            print("Invalid move (out of range or spot taken). Try again!")
+            print("---🥴-----🥴-----🥴-----🥴--")
 
 
-#check for win conditions
+
 def checkHorizontal(board):
     global winner
     if board[0] == board[1] == board[2] and board[1] != "-":
@@ -57,6 +69,7 @@ def checkTie(board):
     if "-" not in board:
         printBoard(board)
         print("GAME TIE!")
+        print("😊-----😊")
         gameRunning = False
 
 def checkWin():
@@ -64,8 +77,9 @@ def checkWin():
     if checkDiagonal(board) or checkHorizontal(board) or checkRow(board):
         printBoard(board)
         print(f"The winner is {winner}")
+        print("-🥳----🥳-----🥳-----🥳")
         gameRunning = False
-#switch player
+              
 def switchPlayer():
     global current_player
     if current_player == "X":
@@ -75,11 +89,12 @@ def switchPlayer():
 
 
 
-#check for win condition again
 
 while gameRunning:
     printBoard(board)
     playerInput(board)
     checkWin()
     checkTie(board)
-    switchPlayer()
+    if gameRunning:
+        switchPlayer()
+
