@@ -1,57 +1,23 @@
-tasks = []
+#Project: Arnav's To Do List
+    - A simple command-line To-Do List app built in Python that lets users add, view, and delete tasks. It uses a list to store tasks and runs in a continuous menu loop until the user exits. 
+##Features
+    - Users can input a new task, which is stored in a list.
+    - View tasks: Users can see all current tasks, each labeled with a task number. 
+    - Delete a task: Tasks can be removed by entering their corresponding number. 
+##How it works
+    - The program stores all tasks in a Python list called tasks.
+    - When launched, it displays a menu of options (add, delete, list, quit).
+    - Depending on the user's input:
+       - Option 1 calls addTask() to get user input and append it to the list.
+        - Option 2 calls deleteTask() to remove a specific task (after showing all tasks).
+        - Option 3 calls listTasks() to print existing tasks.
+       -  Option 4 ends the program loop and prints a goodbye message.
+    - Input validation ensures errors are caught, such as entering text when a number is expected.
+##What I learned 
+    - How to store and manage data in a list.
+    - Using loops and conditionals for menu-driven programs.
+##Future Improvements
+    - Add Timestamps
+    - Add if task was completed or not
 
-def addTask():
-    task = input("Enter a task: ")
-    tasks.append(task)  # Fixed
-    print(f"Task '{task}' added to the list")
-
-def listTasks():
-    if not tasks:
-        print("There are no tasks currently")
-    else:
-        print("Current Tasks: ")
-        for index, task in enumerate(tasks):
-            print(f"Task #{index}. {task}")
-        
-
-def deleteTask():
-    listTasks()  # Fixed
-    try:
-        taskToDelete = int(input("Enter the number to delete: "))
-        if 0 <= taskToDelete < len(tasks):  # Cleaner range check
-            removed = tasks.pop(taskToDelete)
-            print(f"Task '{removed}' has been removed")
-        else:
-            print(f"Task #{taskToDelete} was not found.")
-    except ValueError:
-        print("Invalid input - enter a number.")
-
-
-if __name__ == "__main__":
-
-    print("Welcome to Arnav's To Do List App 🙂: ")
-    while True:
-        print("\n")
-        print("Please select one of these options")
-        print("\n")
-        print("----------------------------------")
-        print("1) Add a new task 👀 ")
-        print("2) Delete a task ❌ ")
-        print("3) List tasks 📙 ")
-        print("4) Quit 👋")
-
-
-        choice = int(input("Enter your choice: "))
-        if choice == 1:
-            addTask()
-        elif choice == 2:
-            deleteTask()
-        elif choice == 3:
-            listTasks()
-        elif choice == 4:
-            break
-        else:
-            print("invalid input. Please try again")
-            
-    print("Goodbye 👋👋")
 
