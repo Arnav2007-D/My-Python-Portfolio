@@ -9,18 +9,19 @@ Simple console app to add grocery items with prices and calculate total.
 - Clean exit with ENTER prompt
 
 ## How it works
-- Two parallel lists: `foods` (names) + `prices` (costs)
+- Two parallel lists: foods (names) + prices (costs)
 - Loop: add item/price or exit to cart view
-- `zip()` pairs items with prices for display
-- `sum(prices)` calculates total
+- zip() pairs items with prices for display
+- sum(prices) calculates total
 
 ## What I learned
 - Parallel lists for related data
-- `zip()` for pairing lists
-- `sum()` for list totals
-- `float()` input for prices
+- zip() for pairing lists
+- sum() for list totals
+- float() input for prices
 
 ## Improvements
 - Input validation for numbers
 - Clear cart option
-- Save/load cart to file
+- Saveand load cart to file
+
