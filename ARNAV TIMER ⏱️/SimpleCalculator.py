@@ -1,31 +1,17 @@
-while True:
-    print("1) Addition")
-    print("2) Subtraction")
-    print("3) Multiplication")
-    print("4) Division")
-    option = int(input("Choose an Operation: "))
-    result = 0
-    if option in [1, 2, 3, 4]:
-        num1 = int(input("Enter a number: "))
-        num2 = int(input("Enter a number: "))
+import time
 
-        if option == 1:
-            result = num1 + num2
-        elif option == 2:
-            result = num1 - num2
-        elif option == 3:
-            result = num1 * num2
-        elif option == 4:
-            result = num1 / num2
+print("⏰ Countdown Timer ⏰")
+hours = int(input("Hours: "))
+minutes = int(input("Minutes: "))
+seconds = int(input("Seconds: "))
 
-        print("The result of this operation is {}".format(result))
+total_seconds = hours * 3600 + minutes * 60 + seconds
+print("Starting countdown...\n")
 
-    else:
-        print("Invalid Operation entered")
+for remaining in range(total_seconds, 0, -1):
+    h, m = divmod(remaining, 3600)
+    m, s = divmod(m, 60)
+    print(f"{h:02}:{m:02}:{s:02}", end="\r")
+    time.sleep(1)
 
-    print("1. Another problem")
-    print("2. Exit")
-    selection = int(input("Enter Choice: "))
-
-    if selection == 2:
-        break
+print("\n💥 TIME’S UP!") 
