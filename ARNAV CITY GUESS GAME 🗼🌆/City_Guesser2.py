@@ -1,9 +1,9 @@
 import random
 
 def choose_city():
-    cities = ['bangkok 🗼', 'london 🏰','mecca 🕌', 'dubai 🏙️', 'paris 🗼',
-    'tokyo 🗼', 'rome 🏛️', 'milan 👠','new york 🗽', 'amsterdam 🚲', 
-    'sydney 🏖️', 'singapore 🌆', 'barcelona 🎨']
+    cities = ['bangkok', 'london', 'mecca', 'dubai', 'paris',
+              'tokyo', 'rome', 'milan', 'nagasaki', 'amsterdam', 
+              'sydney', 'singapore', 'barcelona']
     return random.choice(cities) 
 
 
