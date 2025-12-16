@@ -1,18 +1,19 @@
-# Project: Arnav' Quiz
-  - This project presents a brief overview of my main interests and key aspects of my life, highlighting my aspirations, future goals, and passions.
-## Features
-  - Multiple-choice quiz: Users answer 5 questions about my life, each with three options.
-  - Immediate feedback: After each answer, the program tells the user if they were correct and shows the correct option if they were wrong.
-  - Score calculation: It calculates the final score as a percentage based on how many questions the user got right.
-## How to run
-  - Use python.org or another code program.
-  - run 'python Arnav's Quiz.py'
-## How it works
-  - The questions, options, and correct answers are stored in lists/tuples at the top of the code.
-  - A loop goes through each question, shows its three options, and asks the user to type A, B, or C.
-  - For each question, the code compares the user’s choice with the correct answer and adds 1 point if it’s right.
-  - At the end, it calculates the percentage score and prints all the correct answers and the user’s guesses.
-## What I learned
-  - This further strenghtened my knowledge on conditional, it uses an if and else check to see if the user’s answer matches the correct one.
-## Improvement
-  - do a better job making the conditional statements more functional. 
+As soon as Year 12 started, I only had one goal. That was to become an expert at programming with python. Im have been working on developing my skills for that goal since. I have been developing skills in algorithms, OOP, and software design for real-world applications like AI and apps. These 10 projects showcase my progress and passion for innovation. Have a good time using and playing these games and tools. 😇
+## Table of Content
+  - ARNAV CITY GUESS GAME 🗼🌆
+  - ARNAV FILE ORGANISER📁🗃️
+  - ARNAV PASSWORD GEN🔢
+  - ARNAV QUIZ😇🐿️
+  - ARNAV ROCK PAPER SCISSORS 🎈😁
+  - ARNAV SHOPPING CART 🛒📝
+  - ARNAV TIMER ⏱️
+  - ARNAV TO DO LIST APP⏰📝
+  - ARNAV TicTacToe Game🏁🎲
+  - WEATHER APP😶‍🌫️😍
+## Skills Demonstrated
+  - Python: Loops/functions/classes, Pygame/Tkinter
+## Journey
+- I first started learning how to code on sololearn.com, then i started doing small challenges on edabit.com. Now im taking my skilsl and talent to create projects that will elevate my skills to the next level.
+## Contact
+  - arnav.payal77@gmail.com
+    
