@@ -1,4 +1,4 @@
-As soon as Year 12 started, I only had one goal. That was to become an expert at programming with python. Im have been working on developing my skills for that goal since. I have been developing skills in algorithms, OOP, and software design for real-world applications like AI and apps. These 10 projects showcase my progress and passion for innovation. Have a good time using and playing these games and tools. 😇
+As soon as Year 12 started, I only had one goal. That was to become an expert at programming with python. I have been working on developing my skills for that goal since. I have been developing skills in algorithms, OOP, and software design for real-world applications like AI and apps. These 10 projects showcase my progress and passion for innovation. Have a good time using and playing these games and tools. 😇
 ## Table of Content
   - ARNAV CITY GUESS GAME 🗼🌆
   - ARNAV FILE ORGANISER📁🗃️
